@@ -1,0 +1,223 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  border: 0;
+}
+
+a:link {
+  text-decoration-line: none;
+}
+
+/* ----------------------------------------------- slide show -----------------------------------------------*/
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+/* fadeIn animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 80%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+/* blinking text animation*/
+@keyframes blinkingText {
+  0% {
+    color: black;
+  }
+  49% {
+    color: black;
+  }
+  60% {
+    color: transparent;
+  }
+  99% {
+    color: transparent;
+  }
+  100% {
+    color: black;
+  }
+}
+
+/* scrolling division */
+.b-text {
+  animation: blinkingText 1.2s infinite;
+}
+
+.s-text {
+  color: #081e3f;
+  line-height: 30px;
+}
+
+.scrolling {
+  margin-top: 10px;
+  background-color: #ffcc00;
+}
+
+/* overview */
+.overview {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #081e37;
+  animation: fadeIn 5s both;
+}
+
+.desc {
+  margin-left: 30px;
+  margin-right: 50px;
+  text-align: justify;
+  font-size: large;
+  line-height: 30px;
+  color: white;
+}
+
+.evenn {
+  align: center;
+  width: 95%;
+  border: 1px solid white;
+}
+
+.oddd {
+  align: center;
+  width: 95%;
+  border: 1px solid black;
+}
+
+/* the cards section */
+.schools {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #ffcc00;
+  animation: fadeIn 5s 2s both;
+}
+
+@media (min-width: 700px) {
+  .cards-r {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+}
+
+.all-title {
+  margin-top: 30px;
+  margin-left: 20px;
+  padding-left: 10px;
+}
+
+#odd-title {
+  margin-top: 30px;
+  margin-left: 20px;
+  padding-left: 10px;
+}
+
+.title-text {
+  font-size: 30px;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#ttext {
+  font-size: 30px;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.cards {
+  margin: 20px;
+  min-width: 200px;
+  min-height: 200px;
+  background-color: #081e3f;
+}
+
+.cards:hover {
+  /*background-color: #ffcc00;*/
+}
+
+.card-btn {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  color: #081e3f;
+  text-transform: uppercase;
+  background: white;
+  padding: 5px;
+  border: 2px solid white;
+  border-radius: 6px;
+  transition: all 0.3s ease 0s;
+}
+
+.card-btn:hover {
+  color: #081e3f;
+  background: white;
+  border-radius: 30px;
+  border-color: #081e3f;
+  transition: all 0.3s ease 0s;
+}
+
+.school-img {
+  display: flex;
+  height: 120px;
+  width: 120px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* loation */
+@media (min-width: 700px) {
+  .map-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+}
+
+.location {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #081e37;
+  animation: fadeIn 5s 4s both;
+}
+
+.map {
+  flex: 5;
+}
+
+.map-addr {
+  flex: 7;
+}
+
+.the-map {
+  width: 100%;
+  height: 100%;
+  margin-left: 20px;
+}
+
+.map-head {
+  color: white;
+  font-size: 25px;
+  font-style: oblique;
+  margin-left: 55px;
+  margin-right: 95px;
+  line-height: 28px;
+}
+
+.map-desc {
+  color: white;
+  font-size: 20px;
+  margin-left: 55px;
+  margin-right: 95px;
+  line-height: 28px;
+}
