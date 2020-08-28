@@ -187,6 +187,7 @@ a:link {
 .location {
   padding-top: 15px;
   padding-bottom: 15px;
+  margin-bottom: 20px
   background-color: #081e37;
   animation: fadeIn 5s 4s both;
 }
