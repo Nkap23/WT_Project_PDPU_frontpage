@@ -108,7 +108,7 @@ a:link {
     padding-top: 15px;
     padding-bottom: 15px;
     background-color: #ffcc00;
-    animation: fadeIn 2s 1s both;
+    animation: fadeIn 2s both;
 }
 
 @media (min-width: 700px) {
@@ -197,7 +197,7 @@ a:link {
     padding-top: 15px;
     padding-bottom: 15px;
     background-color: #081e37;
-    animation: fadeIn 2s 2s both;
+    animation: fadeIn 2s both;
 }
 
 .map {
