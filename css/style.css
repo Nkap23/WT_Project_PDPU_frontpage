@@ -268,7 +268,7 @@ body{
 }
 #content{
     padding-top:130px;
-    padding-bottom:40px;
+    /*padding-bottom:40px;*/
     z-index:0;  
 }
 
