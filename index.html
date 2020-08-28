@@ -60,10 +60,10 @@
     <div class="dropdown">
       <button class="dropbtn">About PDPU</button>
       <div class="dropdown-content">
-        <a href="#">The University</a>
-        <a href="#">Vision & Mission</a>
-        <a href="#">Governance</a>
-        <a href="#">Directors</a>
+        <a href="#" id="uni">The University</a>
+        <a href="#" id="vm">Vision & Mission</a>
+        <a href="#" id="gov">Governance</a>
+        <a href="#" id="dir">Directors</a>
       </div>
     </div>
     <div class="dropdown">
@@ -409,6 +409,21 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Your custom scripts (optional) -->
     <script type="text/javascript" src="index.js"></script>
+    <!-- Alert message -->
+    <script>
+      let link = document.getElementsByTagName("a")
+      let l = link.length
+      let counter = []
+      counter.length = l
+      for(let i=0; i<l-1; ++i) {
+        counter[i] = 0
+        console.log(link[i])
+        link[i].addEventListener("click", function() {
+          counter[i]++
+          alert(link[i].innerText+" is clicked "+counter[i]+" times")
+        })
+      }
+    </script>
   </div>
 </body>
 
